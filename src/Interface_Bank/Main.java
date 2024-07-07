@@ -6,6 +6,7 @@ public class Main {
         CreditCard creditCard = new CreditCard();
         payPal.pay();
         payPal.getPaymentDetails();
+        System.out.println();
         creditCard.pay();
         creditCard.getPaymentDetails();
 

@@ -8,18 +8,20 @@ public class CreditCard implements PaymentMethod{
 //        this.expirationDate = expirationDate;
 //    }
 
-   public void pay(){
-       System.out.println("using credit card");
+   public void pay(){System.out.println("----Credit Card----");
+
 
 
     }
     public void getPaymentDetails() {
         System.out.println("Enter your Card Number: ");
         long cardNumber = sc.nextLong();
-        //System.out.println("card number: "+cardNumber);
-        System.out.println("Your expiry date");
+
+        System.out.print("Your expiry date: ");
         String expirationDate = sc.next();
-        //System.out.println("Expiry date: "+expirationDate);
+        System.out.println("using credit card");
+        System.out.println("card number: "+cardNumber);
+        System.out.println("Expiry date: "+expirationDate);
 
     }
 
