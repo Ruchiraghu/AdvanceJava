@@ -65,6 +65,13 @@ public class StringTopic {
         char find = 'c';
         int occ = str4.length()-str4.replace(String.valueOf(find),"").length();
         System.out.println(occ);
+        //Question 12
+        System.out.println("Question 12");
+        StringBuffer strBuffer = new StringBuffer( "HelloWorld");
+       String insertStr = "Beautiful";
+       int pos = 5;
+
+        System.out.println(strBuffer.insert(pos,insertStr));
 
     }
 }
