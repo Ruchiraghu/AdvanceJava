@@ -8,13 +8,18 @@ public class Main{
             System.out.println("Greetings.....");
         };
        le.words();
+
        LambdaExpressionParameter lep = (h,b)->{
            System.out.println("Enter your name: ");
            String name = sc.next();
            System.out.println(h+" "+ name.toUpperCase()+" Good Morning!!! ");
-           System.out.println(b);
 
+           System.out.println(b);
+           le.say();//Default will run first no matter where you call them
        };
+        lep.saying();
+
        lep.greeting("Hello!","Have a nice day :)");
+
     }
 }
