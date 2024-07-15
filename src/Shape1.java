@@ -1,4 +1,4 @@
-interface Shape
+interface Shape1
 
 {
 
@@ -6,7 +6,7 @@ interface Shape
 
 }
 
-class Circle implements Shape
+class Circle implements Shape1
 
 {
 
@@ -18,7 +18,7 @@ class Circle implements Shape
 
     } }
 
-class Rectangle implements Shape
+class Rectangle implements Shape1
 
 {
 
@@ -29,11 +29,11 @@ class Rectangle implements Shape
         System.out.println("Drawing a rectangle");
 
     } }
- class Main { public static void main(String[] args)
+class Mainn { public static void main(String[] args)
 
 {
 
-    Shape[] shapes = new Shape[3];
+    Shape1[] shapes = new Shape1[3];
 
     shapes[0] = new Circle();
 
@@ -41,7 +41,7 @@ class Rectangle implements Shape
 
     shapes[2] = new Circle();
 
-    for (Shape shape : shapes)
+    for (Shape1 shape : shapes)
 
     {
 
