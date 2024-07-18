@@ -14,15 +14,13 @@ public class CollectionArrayList {
         newElements.add("Aman");
         newElements.add("Ravi");
         CollectionArrayList collectionArrayList = new CollectionArrayList();
-        collectionArrayList.addAll(arrayList,newElements);
         System.out.println("After adding new elements");
         itr = arrayList.iterator();
         while (itr.hasNext()){
             System.out.println(itr.next());
         }
+        newElements.addAll(arrayList);
+        System.out.println(newElements);
+    }
 
-    }
-    public <E> boolean addAll(Collection<E> c, Collection<? extends E> elementsToAdd) {
-        return c.addAll(elementsToAdd);
-    }
 }
