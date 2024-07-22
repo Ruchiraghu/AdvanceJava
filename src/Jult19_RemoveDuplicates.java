@@ -21,6 +21,9 @@ public class Jult19_RemoveDuplicates {
 
             }
         }
+//        System.out.println("Sorting");
+//        Collections.sort(list);
+
         HashSet<Integer> hashSet = new HashSet<>(list);
         List<Integer> result = new ArrayList<>(hashSet);
         System.out.println(result);
